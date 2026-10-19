@@ -1,0 +1,548 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="f-ouro-tex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="4" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values=".5 0 0 0 .48  .38 0 0 0 .34  .16 0 0 0 .12  0 0 0 0 1"/>
+    </filter>
+    <pattern id="g-ouro" width="120" height="120" patternUnits="userSpaceOnUse"><rect width="120" height="120" fill="#B88C3E"/><rect width="120" height="120" filter="url(#f-ouro-tex)"/></pattern>
+    <radialGradient id="g-cera" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#B02D42"/><stop offset=".45" stop-color="#7A0F1E"/><stop offset="1" stop-color="#43050E"/></radialGradient>
+    <linearGradient id="g-aba" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A01A2B"/><stop offset="1" stop-color="#7A101C"/></linearGradient>
+    <linearGradient id="g-bolso" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#97182A"/><stop offset="1" stop-color="#7E111E"/></linearGradient>
+    <linearGradient id="g-papel-bq" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E9DCC3"/><stop offset=".5" stop-color="#F8F0E1"/><stop offset="1" stop-color="#DCCBAE"/></linearGradient>
+    <linearGradient id="g-kraft-bq" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B08A5C"/><stop offset=".5" stop-color="#D2B48A"/><stop offset="1" stop-color="#A27D50"/></linearGradient>
+    <radialGradient id="g-miolo" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#7A4A22"/><stop offset=".7" stop-color="#4A2810"/><stop offset="1" stop-color="#2E1808"/></radialGradient>
+    <filter id="f-cera" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+    <filter id="f-sombra" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity=".38"/></filter>
+    <filter id="f-flor" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#3A0710" flood-opacity=".28"/></filter>
+    <path id="heart" d="M12 21s-7.5-4.6-10-9.2C.3 8.4 2.2 4 6.2 4c2.3 0 3.8 1.3 5.8 3.4C14 5.3 15.5 4 17.8 4c4 0 5.9 4.4 4.2 7.8C19.5 16.4 12 21 12 21z"/>
+    <path id="petal" d="M0 0 C-.62 -.25 -.62 -1 0 -1 C.62 -1 .62 -.25 0 0Z"/>
+    <path id="petal-long" d="M0 0 C-.22 -.3 -.2 -.8 0 -1.15 C.2 -.8 .22 -.3 0 0Z"/>
+    <path id="petal-lily" d="M0 0 C-.3 -.32 -.26 -.86 0 -1.25 C.26 -.86 .3 -.32 0 0Z"/>
+    <symbol id="lacre" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="44" fill="url(#g-cera)" filter="url(#f-cera)"/>
+      <circle cx="50" cy="50" r="31" fill="none" stroke="#3E050C" stroke-opacity=".45" stroke-width="3"/>
+      <circle cx="50" cy="50" r="31" fill="none" stroke="#D9B66A" stroke-opacity=".5" stroke-width="1.2"/>
+      <g transform="translate(34 33) scale(1.34)"><use href="#heart" fill="#3E050C" fill-opacity=".45" transform="translate(.6 .9)"/><use href="#heart" fill="url(#g-ouro)"/></g>
+      <ellipse cx="36" cy="30" rx="12" ry="6" fill="#fff" opacity=".1" transform="rotate(-30 36 30)"/>
+    </symbol>
+    <symbol id="logo-a" viewBox="0 0 64 46">
+      <rect x="2" y="3" width="60" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/>
+      <path d="M3 5 L32 27 L61 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M3 42 L24 22 M61 42 L40 22" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".5"/>
+      <g transform="translate(24.5 19.5) scale(.62)"><use href="#heart" fill="#B11E2F" stroke="currentColor" stroke-width="2"/></g>
+    </symbol>
+    <symbol id="logo-b" viewBox="0 0 100 100"><use href="#lacre"/></symbol>
+    <symbol id="logo-c" viewBox="0 0 24 24">
+      <use href="#heart" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M2.4 8.6 L12 15 L21.6 8.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="logo-p" viewBox="0 0 124 100">
+      <g transform="rotate(-8 62 56)">
+        <rect x="12" y="26" width="100" height="64" rx="5" fill="#8E1422" stroke="url(#g-ouro)" stroke-width="2.2"/>
+        <path d="M13 89 L54 56 M111 89 L70 56" stroke="#4A0812" stroke-width="1.4" opacity=".55"/>
+        <path d="M13 27 H111 L62 63 Z" fill="#A41C2E" stroke="url(#g-ouro)" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M72 70 C 86 84, 106 86, 114 76 C 120 68, 112 60, 106 66 C 102 70, 106 76, 112 74" fill="none" stroke="url(#g-ouro)" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="62" cy="63" r="13" fill="url(#g-cera)" filter="url(#f-cera)"/>
+        <circle cx="62" cy="63" r="9" fill="none" stroke="#3E050C" stroke-opacity=".4" stroke-width="1.2"/>
+        <g transform="translate(55.2 56.6) scale(.57)"><use href="#heart" fill="url(#g-ouro)"/></g>
+      </g>
+      <g transform="translate(98 2) rotate(14) scale(.62)"><use href="#heart" fill="#B11E2F"/></g>
+      <g transform="translate(86 -2) rotate(-10) scale(.36)"><use href="#heart" fill="#D2334A"/></g>
+    </symbol>
+    <symbol id="logo-m" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="45" fill="url(#g-cera)" filter="url(#f-cera)"/>
+      <circle cx="50" cy="50" r="34" fill="none" stroke="url(#g-ouro)" stroke-width="1.6"/>
+      <circle cx="50" cy="50" r="30" fill="none" stroke="#3E050C" stroke-opacity=".4" stroke-width="1"/>
+      <text x="50" y="62" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="40" fill="url(#g-ouro)">eA</text>
+      <g transform="translate(45 20) scale(.42)"><use href="#heart" fill="url(#g-ouro)"/></g>
+    </symbol>
+    <symbol id="logo-l" viewBox="0 0 124 100">
+      <rect x="16" y="44" width="92" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="2.6"/>
+      <path d="M17 46 L62 16 L107 46" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+      <path d="M17 94 L54 66 M107 94 L70 66" stroke="currentColor" stroke-width="1.4" opacity=".5"/>
+      <path d="M17 46 L62 74 L107 46" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".7"/>
+      <path class="trail" d="M62 60 C 58 44, 76 40, 74 26 C 73 18, 82 12, 88 12" fill="none" stroke="#B11E2F" stroke-width="2" stroke-dasharray="1 5" stroke-linecap="round"/>
+      <g transform="translate(84 -2) rotate(16) scale(.9)"><use href="#heart" fill="#B11E2F"/></g>
+    </symbol>
+    <radialGradient id="g-cera-vinho" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#B02D42"/><stop offset=".45" stop-color="#7A0F1E"/><stop offset="1" stop-color="#43050E"/></radialGradient>
+    <radialGradient id="g-cera-vermelho" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#E5566A"/><stop offset=".45" stop-color="#B11E2F"/><stop offset="1" stop-color="#650B17"/></radialGradient>
+    <radialGradient id="g-cera-ouro" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#EBD196"/><stop offset=".5" stop-color="#B88C3E"/><stop offset="1" stop-color="#6A4A18"/></radialGradient>
+    <radialGradient id="g-cera-marfim" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8EC"/><stop offset=".5" stop-color="#E6D6B8"/><stop offset="1" stop-color="#A38D66"/></radialGradient>
+    <radialGradient id="g-cera-verde" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#8FA86C"/><stop offset=".5" stop-color="#4E6B35"/><stop offset="1" stop-color="#22331A"/></radialGradient>
+    <linearGradient id="g-env-front" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+    <linearGradient id="g-env-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".12"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+    <linearGradient id="g-env-flap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#000" stop-opacity=".1"/></linearGradient>
+    <pattern id="p-grao" width="160" height="160" patternUnits="userSpaceOnUse"><rect width="160" height="160" filter="url(#f-grao)"/></pattern>
+    <filter id="f-grao" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="9" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .2  0 0 0 0 .12  0 0 0 0 .06  0 0 0 .5 0"/></filter>
+<linearGradient id="mao-sombra" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3A1A0C" stop-opacity=".28"/><stop offset=".42" stop-color="#fff" stop-opacity=".12"/><stop offset=".6" stop-color="#3A1A0C" stop-opacity="0"/><stop offset="1" stop-color="#3A1A0C" stop-opacity=".3"/></linearGradient>
+<linearGradient id="mao-manga" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4A0812"/><stop offset=".5" stop-color="#8E1422"/><stop offset="1" stop-color="#4A0812"/></linearGradient>
+<linearGradient id="mg-pele" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2A1206" stop-opacity=".32"/><stop offset=".35" stop-color="#2A1206" stop-opacity=".04"/><stop offset=".55" stop-color="#fff" stop-opacity=".14"/><stop offset=".8" stop-color="#2A1206" stop-opacity=".1"/><stop offset="1" stop-color="#2A1206" stop-opacity=".34"/></linearGradient>
+<linearGradient id="mg-pele-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset=".7" stop-color="#2A1206" stop-opacity="0"/><stop offset="1" stop-color="#2A1206" stop-opacity=".3"/></linearGradient>
+<linearGradient id="mg-manga" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3A050C"/><stop offset=".3" stop-color="#7E1220"/><stop offset=".55" stop-color="#951A2A"/><stop offset="1" stop-color="#40060E"/></linearGradient>
+<linearGradient id="mg-unha" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity=".15"/></linearGradient>
+<linearGradient id="m2-sk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4A1E0C" stop-opacity=".38"/><stop offset=".22" stop-color="#4A1E0C" stop-opacity=".08"/><stop offset=".5" stop-color="#fff" stop-opacity=".12"/><stop offset=".78" stop-color="#4A1E0C" stop-opacity=".06"/><stop offset="1" stop-color="#4A1E0C" stop-opacity=".36"/></linearGradient>
+<linearGradient id="m2-skv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4A1E0C" stop-opacity=".18"/><stop offset=".3" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#4A1E0C" stop-opacity=".22"/></linearGradient>
+<linearGradient id="m2-th" gradientUnits="userSpaceOnUse" x1="146" y1="0" x2="198" y2="0" gradientTransform="rotate(6 172 150)"><stop offset="0" stop-color="#4A1E0C" stop-opacity=".32"/><stop offset=".35" stop-color="#4A1E0C" stop-opacity="0"/><stop offset=".6" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#4A1E0C" stop-opacity=".34"/></linearGradient>
+<linearGradient id="m2-nail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7E2D6"/><stop offset=".7" stop-color="#E9B4A4"/><stop offset="1" stop-color="#D99C8A"/></linearGradient>
+<filter id="m2-blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="m2-blur6" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+<path id="m2-dorso" d="M62 248 C56 222 50 192 52 162 C53 146 58 134 66 128 C80 118 100 112 118 114 C132 116 142 120 148 128 C158 142 168 165 172 190 C174 214 162 236 150 248 Z"/>
+<g id="m2-dedos"><path d="M120 128 C118 100 120 70 126 52 C130 42 144 42 146 54 C148 74 146 104 146 130 Z"/><path d="M98 120 C96 90 98 58 104 40 C108 30 122 30 124 42 C126 64 124 96 124 122 Z"/><path d="M78 124 C76 96 78 66 84 52 C88 42 100 42 102 54 C104 76 102 104 102 126 Z"/><path d="M60 134 C58 112 60 90 66 78 C70 70 80 72 82 80 C84 98 82 118 80 136 Z"/></g>
+<path id="m2-pol" d="M146 214 C150 180 157 140 163 108 C165 94 167 84 169 78 C173 64 193 64 195 78 C197 92 195 108 193 122 C189 150 185 178 182 204 C180 218 172 228 162 232 C154 232 146 226 146 214 Z"/>
+<clipPath id="m2-c-mao"><use href="#m2-dorso"/><use href="#m2-dedos"/></clipPath>
+<clipPath id="m2-c-pol"><use href="#m2-pol"/></clipPath>
+<g id="m2-punho">
+  <path d="M46 236 C70 228 132 228 158 236 L162 266 C130 274 72 274 42 266 Z" fill="#5E0A16"/>
+  <path d="M46 236 C70 228 132 228 158 236 L162 266 C130 274 72 274 42 266 Z" fill="url(#mg-manga)" opacity=".7"/>
+  <path d="M56 236 V268 M66 234 V270 M76 233 V271 M86 232 V272 M96 232 V272 M106 232 V272 M116 232 V272 M126 232 V272 M136 233 V271 M146 234 V269" stroke="#2A0308" stroke-opacity=".35" stroke-width="2.4"/>
+  <path d="M46 236 C70 228 132 228 158 236" stroke="#C9A35A" stroke-opacity=".7" stroke-width="1.4" fill="none"/>
+</g>
+<symbol id="mao-g-tras" viewBox="0 0 200 300" overflow="visible">
+  <path d="M44 250 C70 244 132 244 160 250 L196 980 L6 980 Z" fill="url(#mg-manga)"/>
+  <path d="M80 290 L66 980 M130 300 L150 980" stroke="#2A0308" stroke-opacity=".3" stroke-width="3" fill="none"/>
+  <use href="#m2-dedos" style="fill:var(--pele,#E9B994)" stroke="#4A1E0C" stroke-opacity=".28" stroke-width="1.2"/>
+  <use href="#m2-dorso" style="fill:var(--pele,#E9B994)"/>
+  <g clip-path="url(#m2-c-mao)">
+    <rect x="40" y="20" width="130" height="240" fill="url(#m2-sk)"/><rect x="40" y="20" width="130" height="240" fill="url(#m2-skv)"/>
+    <g filter="url(#m2-blur)" fill="none" stroke-linecap="round">
+      <path d="M72 238 C70 200 68 160 70 132 M94 236 C94 196 96 156 100 124 M114 236 C116 196 120 156 126 126" stroke="#fff" stroke-opacity=".09" stroke-width="6"/>
+      <path d="M84 236 C82 196 82 160 86 128 M104 236 C106 196 108 160 112 124" stroke="#4A1E0C" stroke-opacity=".1" stroke-width="6"/>
+      <path d="M68 132 q8 -6 14 -4 M88 122 q8 -6 16 -4 M110 120 q10 -6 18 -2 M130 124 q8 -4 14 2" stroke="#fff" stroke-opacity=".32" stroke-width="4"/>
+      <path d="M62 142 C80 132 120 128 150 138" stroke="#4A1E0C" stroke-opacity=".12" stroke-width="6"/>
+    </g>
+  </g>
+  <path d="M62 248 C56 222 50 192 52 162 C53 146 58 134 66 128 M148 128 C158 142 168 165 172 190 C174 214 162 236 150 248" fill="none" stroke="#4A1E0C" stroke-opacity=".28" stroke-width="1.2"/>
+  <use href="#m2-pol-g"/>
+  <use href="#m2-punho"/>
+</symbol>
+<g id="m2-pol-g">
+  <use href="#m2-pol" style="fill:var(--pele,#E9B994)"/>
+  <g clip-path="url(#m2-c-pol)"><g mask="url(#m2-m-pb)">
+    <rect x="120" y="60" width="100" height="200" fill="url(#m2-th)"/>
+    <g filter="url(#m2-blur)" fill="none" stroke-linecap="round">
+      <path d="M186 90 C184 130 180 166 174 210" stroke="#fff" stroke-opacity=".28" stroke-width="7"/>
+      <path d="M150 226 C154 196 160 160 166 124" stroke="#4A1E0C" stroke-opacity=".22" stroke-width="8"/>
+    </g>
+  </g></g>
+  <path d="M150 182 C153 160 158 132 163 108 C165 94 167 84 169 78 C173 64 193 64 195 78 C197 92 195 108 193 122 C189 150 185 178 182 204" fill="none" stroke="#4A1E0C" stroke-opacity=".32" stroke-width="1.3" stroke-linecap="round"/>
+  <g transform="translate(182 88) rotate(6)">
+    <path d="M-8.5 -11 C-8 -19 8 -19 8.5 -11 L8 7 C4 10 -4 10 -8 7 Z" fill="url(#m2-nail)" opacity=".92"/>
+    <path d="M-8.5 -11 C-8 -19 8 -19 8.5 -11 L8 7 C4 10 -4 10 -8 7 Z" fill="none" stroke="#7A3A26" stroke-opacity=".35" stroke-width="1"/>
+    <path d="M-5 -12 C-3 -15 3 -15 5 -12" stroke="#fff" stroke-opacity=".75" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M-7 7 C-3 10 3 10 7 7" stroke="#fff" stroke-opacity=".5" stroke-width="1.6" fill="none"/>
+    <path d="M-7 26 q7 3 14 0 M-6 30 q6 2 12 0" stroke="#5A2412" stroke-opacity=".28" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+  </g>
+</g>
+<linearGradient id="m2-fade2" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="0" y2="224"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+<mask id="m2-m-pb" maskUnits="userSpaceOnUse" x="-50" y="-50" width="320" height="400"><rect x="-50" y="-50" width="320" height="400" fill="url(#m2-fade2)"/></mask>
+<linearGradient id="m2-fade" gradientUnits="userSpaceOnUse" x1="0" y1="168" x2="0" y2="196"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+<mask id="m2-m-pol" maskUnits="userSpaceOnUse" x="-50" y="-50" width="320" height="400"><rect x="-50" y="-50" width="320" height="400" fill="url(#m2-fade)"/></mask>
+<symbol id="mao-g-frente" viewBox="0 0 200 300" overflow="visible">
+  <use href="#m2-pol" transform="translate(-5 7)" fill="#2A0A04" opacity=".28" filter="url(#m2-blur)" mask="url(#m2-m-pol)"/>
+  <use href="#m2-pol-g" mask="url(#m2-m-pol)"/>
+</symbol>
+<g id="m2-curl3"><path d="M58 138 C56 118 60 104 70 100 C80 97 86 106 86 120 L86 136 Z"/><path d="M80 128 C78 104 84 90 96 88 C108 87 112 98 112 114 L112 128 Z"/><path d="M104 126 C102 102 108 88 120 86 C132 86 136 98 136 114 L136 128 Z"/></g>
+<g id="m2-curl4"><use href="#m2-curl3"/><path d="M126 130 C124 108 130 94 142 92 C154 92 158 104 158 120 L156 136 Z"/></g>
+<path id="m2-indic" d="M124 130 C122 96 124 50 128 18 C130 4 150 4 152 18 C154 50 154 96 152 132 Z"/>
+<path id="m2-pol-ap" d="M140 214 C144 190 150 166 154 146 C156 132 162 122 172 124 C182 128 182 140 180 152 C176 176 170 200 164 220 Z"/>
+<path id="m2-pol-pi" d="M146 218 C148 190 150 158 150 132 C150 118 152 106 160 104 C170 104 174 114 174 128 C176 156 178 188 178 214 C172 232 150 232 146 218 Z"/>
+<clipPath id="m2-c-ap"><use href="#m2-dorso"/><use href="#m2-curl3"/><use href="#m2-indic"/></clipPath>
+<clipPath id="m2-c-pi"><use href="#m2-dorso"/><use href="#m2-curl4"/></clipPath>
+<g id="m2-manga-g">
+  <path d="M44 250 C70 244 132 244 160 250 L196 980 L6 980 Z" fill="url(#mg-manga)"/>
+  <path d="M80 290 L66 980 M130 300 L150 980" stroke="#2A0308" stroke-opacity=".3" stroke-width="3" fill="none"/>
+</g>
+<g id="m2-dorso-sh" filter="url(#m2-blur)" fill="none" stroke-linecap="round">
+  <path d="M72 238 C70 200 68 160 70 132 M94 236 C94 196 96 156 100 124 M114 236 C116 196 120 156 126 126" stroke="#fff" stroke-opacity=".09" stroke-width="6"/>
+  <path d="M84 236 C82 196 82 160 86 128 M104 236 C106 196 108 160 112 124" stroke="#4A1E0C" stroke-opacity=".1" stroke-width="6"/>
+</g>
+<g id="m2-ap-l">
+  <use href="#m2-manga-g"/>
+  <g style="fill:var(--pele,#E9B994)" stroke="#4A1E0C" stroke-opacity=".3" stroke-width="1.2"><use href="#m2-curl3"/><use href="#m2-indic"/></g>
+  <use href="#m2-pol-ap" style="fill:var(--pele,#E9B994)" stroke="#4A1E0C" stroke-opacity=".3" stroke-width="1.2"/>
+  <use href="#m2-pol-ap" fill="url(#m2-sk)" opacity=".8"/>
+  <path d="M164 130 C166 125 176 126 177 132 L176 140 C172 142 166 142 164 139 Z" fill="url(#m2-nail)" opacity=".85" transform="rotate(14 170 134)"/>
+  <use href="#m2-dorso" style="fill:var(--pele,#E9B994)"/>
+  <g clip-path="url(#m2-c-ap)">
+    <rect x="40" y="0" width="130" height="260" fill="url(#m2-sk)"/><rect x="40" y="0" width="130" height="260" fill="url(#m2-skv)"/>
+    <use href="#m2-dorso-sh"/>
+    <g filter="url(#m2-blur)" fill="none" stroke-linecap="round">
+      <path d="M140 20 L140 120" stroke="#fff" stroke-opacity=".22" stroke-width="7"/>
+      <path d="M126 40 L126 128" stroke="#4A1E0C" stroke-opacity=".16" stroke-width="6"/>
+      <path d="M64 108 q8 -6 14 -4 M88 98 q8 -6 16 -4 M110 96 q10 -6 18 -2" stroke="#fff" stroke-opacity=".5" stroke-width="5"/>
+      <path d="M60 132 C80 128 110 124 130 128" stroke="#4A1E0C" stroke-opacity=".22" stroke-width="8"/>
+    </g>
+  </g>
+  <path d="M62 248 C56 222 50 192 52 162 C53 146 58 134 66 128 M148 128 C158 142 168 165 172 190 C174 214 162 236 150 248" fill="none" stroke="#4A1E0C" stroke-opacity=".28" stroke-width="1.2"/>
+  <path d="M128 76 q12 -3 24 0 M128 82 q12 -2 24 0 M127 112 q13 -3 26 0" stroke="#5A2412" stroke-opacity=".25" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+  <g transform="translate(140 22)"><path d="M-8.5 -9 C-8 -17 8 -17 8.5 -9 L8 8 C4 11 -4 11 -8 8 Z" fill="url(#m2-nail)" opacity=".92" stroke="#7A3A26" stroke-opacity=".35" stroke-width="1"/><path d="M-5 -10 C-3 -13 3 -13 5 -10" stroke="#fff" stroke-opacity=".75" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+  <use href="#m2-punho"/>
+</g>
+<g id="m2-pi-l">
+  <use href="#m2-manga-g"/>
+  <use href="#m2-curl4" style="fill:var(--pele,#E9B994)" stroke="#4A1E0C" stroke-opacity=".3" stroke-width="1.2"/>
+  <use href="#m2-dorso" style="fill:var(--pele,#E9B994)"/>
+  <g clip-path="url(#m2-c-pi)">
+    <rect x="40" y="60" width="130" height="200" fill="url(#m2-sk)"/><rect x="40" y="60" width="130" height="200" fill="url(#m2-skv)"/>
+    <use href="#m2-dorso-sh"/>
+    <g filter="url(#m2-blur)" fill="none" stroke-linecap="round">
+      <path d="M64 108 q8 -6 14 -4 M88 98 q8 -6 16 -4 M110 96 q10 -6 18 -2 M132 102 q8 -4 14 0" stroke="#fff" stroke-opacity=".5" stroke-width="5"/>
+      <path d="M58 132 C80 128 120 124 156 132" stroke="#4A1E0C" stroke-opacity=".22" stroke-width="8"/>
+    </g>
+  </g>
+  <path d="M62 248 C56 222 50 192 52 162 C53 146 58 134 66 128 M148 128 C158 142 168 165 172 190 C174 214 162 236 150 248" fill="none" stroke="#4A1E0C" stroke-opacity=".28" stroke-width="1.2"/>
+  <use href="#m2-pol-pi" transform="translate(-4 6)" fill="#2A0A04" opacity=".25" filter="url(#m2-blur)"/>
+  <use href="#m2-pol-pi" style="fill:var(--pele,#E9B994)"/>
+  <use href="#m2-pol-pi" fill="url(#m2-sk)" opacity=".8"/>
+  <path d="M148 196 C150 170 150 150 150 132 C150 118 152 106 160 104 C170 104 174 114 174 128 C176 156 178 188 178 214" fill="none" stroke="#4A1E0C" stroke-opacity=".3" stroke-width="1.2"/>
+  <g transform="translate(162 116)"><path d="M-7.5 -8 C-7 -14 7 -14 7.5 -8 L7 7 C3.5 9.5 -3.5 9.5 -7 7 Z" fill="url(#m2-nail)" opacity=".92" stroke="#7A3A26" stroke-opacity=".35" stroke-width="1"/><path d="M-4 -9 C-2 -11 2 -11 4 -9" stroke="#fff" stroke-opacity=".7" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>
+  <path d="M154 150 q8 3 16 0" stroke="#5A2412" stroke-opacity=".25" stroke-width="1.3" fill="none"/>
+  <use href="#m2-punho"/>
+</g>
+<symbol id="mao-aponta" viewBox="0 0 200 300" overflow="visible"><g transform="translate(200 0) scale(-1 1)"><use href="#m2-ap-l"/></g></symbol>
+<symbol id="mao-polegar" viewBox="0 0 200 300" overflow="visible"><g transform="translate(200 0) scale(-1 1)"><use href="#m2-pi-l"/></g></symbol>
+
+
+<filter id="f-sticker" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="4.5" result="d"/><feFlood flood-color="#FFFDF8"/><feComposite in2="d" operator="in" result="w"/><feGaussianBlur in="d" stdDeviation="2.2" result="b"/><feOffset in="b" dx="1.5" dy="3.5" result="o"/><feFlood flood-color="#3A0710" flood-opacity=".3"/><feComposite in2="o" operator="in" result="s"/><feMerge><feMergeNode in="s"/><feMergeNode in="w"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<g id="st-olhos"><ellipse cx="-11" cy="0" rx="3.6" ry="4.4" fill="#2A120A"/><ellipse cx="11" cy="0" rx="3.6" ry="4.4" fill="#2A120A"/><circle cx="-10" cy="-1.6" r="1.3" fill="#fff"/><circle cx="12" cy="-1.6" r="1.3" fill="#fff"/><ellipse cx="-17" cy="7" rx="4.5" ry="2.6" fill="#E0505E" opacity=".45"/><ellipse cx="17" cy="7" rx="4.5" ry="2.6" fill="#E0505E" opacity=".45"/></g>
+<symbol id="st-gato" viewBox="0 0 100 100" overflow="visible"><path d="M22 40 L26 12 L44 30 Z M78 40 L74 12 L56 30 Z" fill="#E39A57" stroke="#7A4220" stroke-width="2" stroke-linejoin="round"/><path d="M28 32 L29 20 L38 29Z M72 32 L71 20 L62 29Z" fill="#F1B7A6"/><ellipse cx="50" cy="56" rx="34" ry="29" fill="#E9A866" stroke="#7A4220" stroke-width="2"/><path d="M50 28 l0 10 M42 30 l3 8 M58 30 l-3 8" stroke="#C47A3C" stroke-width="3" stroke-linecap="round"/><use href="#st-olhos" transform="translate(50 54)"/><path d="M47 62 h6 l-3 3z" fill="#B23A48"/><path d="M44 67 q3 3 6 0 q3 3 6 0" stroke="#2A120A" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M14 58 l14 2 M14 66 l14 -1 M86 58 l-14 2 M86 66 l-14 -1" stroke="#7A4220" stroke-width="1.4" stroke-linecap="round"/></symbol>
+<symbol id="st-cachorro" viewBox="0 0 100 100" overflow="visible"><ellipse cx="50" cy="54" rx="31" ry="30" fill="#F3E2C4" stroke="#7A4E2E" stroke-width="2"/><path d="M22 30 C8 34 8 66 18 72 C26 70 28 50 30 38Z M78 30 C92 34 92 66 82 72 C74 70 72 50 70 38Z" fill="#9A6440" stroke="#5A3418" stroke-width="2" stroke-linejoin="round"/><ellipse cx="64" cy="42" rx="9" ry="8" fill="#C99A6B" opacity=".7"/><use href="#st-olhos" transform="translate(50 50)"/><ellipse cx="50" cy="62" rx="6" ry="4.5" fill="#2A120A"/><path d="M50 66 v4 M44 70 q6 5 12 0" stroke="#2A120A" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M47 71 q3 9 6 0z" fill="#D9475A"/></symbol>
+<symbol id="st-urso" viewBox="0 0 100 100" overflow="visible"><circle cx="24" cy="26" r="11" fill="#A8724A" stroke="#5A3418" stroke-width="2"/><circle cx="76" cy="26" r="11" fill="#A8724A" stroke="#5A3418" stroke-width="2"/><circle cx="24" cy="26" r="5" fill="#E8C49C"/><circle cx="76" cy="26" r="5" fill="#E8C49C"/><circle cx="50" cy="50" r="31" fill="#B07B50" stroke="#5A3418" stroke-width="2"/><ellipse cx="50" cy="60" rx="14" ry="11" fill="#EBCDA6"/><use href="#st-olhos" transform="translate(50 46)"/><ellipse cx="50" cy="56" rx="4.6" ry="3.4" fill="#2A120A"/><path d="M45 63 q5 4 10 0" stroke="#2A120A" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M50 96 C36 86 30 80 34 74 C37 70 44 71 50 77 C56 71 63 70 66 74 C70 80 64 86 50 96Z" fill="#C8102E" stroke="#7A0A1C" stroke-width="2"/></symbol>
+<symbol id="st-coelho" viewBox="0 0 100 100" overflow="visible"><path d="M34 46 C26 26 26 6 34 4 C42 4 44 24 44 42Z M66 46 C74 26 74 6 66 4 C58 4 56 24 56 42Z" fill="#FBF4EA" stroke="#8A6A5A" stroke-width="2"/><path d="M36 38 C32 24 32 12 35 10 C38 12 40 24 40 38Z M64 38 C68 24 68 12 65 10 C62 12 60 24 60 38Z" fill="#F1B7A6"/><ellipse cx="50" cy="62" rx="30" ry="27" fill="#FBF4EA" stroke="#8A6A5A" stroke-width="2"/><use href="#st-olhos" transform="translate(50 60)"/><path d="M47 67 h6 l-3 3z" fill="#D9475A"/><path d="M50 70 v3 M46 74 q4 3 8 0" stroke="#2A120A" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M40 82 h7 v6 h-7z M53 82 h7 v6 h-7z" fill="#fff" stroke="#8A6A5A" stroke-width="1"/></symbol>
+<symbol id="st-coracao" viewBox="0 0 100 100" overflow="visible"><path d="M50 90 C22 70 8 56 10 36 C12 20 30 12 42 20 C46 23 48 26 50 30 C52 26 54 23 58 20 C70 12 88 20 90 36 C92 56 78 70 50 90Z" fill="#C8102E" stroke="#6A0716" stroke-width="2.4"/><path d="M22 34 C24 26 30 22 36 24" stroke="#fff" stroke-opacity=".55" stroke-width="5" fill="none" stroke-linecap="round"/><use href="#st-olhos" transform="translate(50 50)"/><path d="M44 60 q6 7 12 0" stroke="#2A120A" stroke-width="2.2" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="st-cafe" viewBox="0 0 100 100" overflow="visible"><path d="M40 22 q-6 -8 0 -14 M52 22 q-6 -8 0 -14 M64 22 q-6 -8 0 -14" stroke="#C9A97A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M76 44 C92 44 92 68 74 68" stroke="#B5172B" stroke-width="7" fill="none"/><path d="M20 32 H80 L74 84 C73 90 68 94 62 94 H38 C32 94 27 90 26 84Z" fill="#FBF4EA" stroke="#6A0716" stroke-width="2.4" stroke-linejoin="round"/><path d="M21 42 H79 L78 52 H22Z" fill="#B5172B"/><ellipse cx="50" cy="33" rx="29" ry="5" fill="#7A4628"/><path d="M44 31 C42 28 46 26 48 29 C50 26 54 28 52 31 L48 35Z" fill="#F3E2C4"/><use href="#st-olhos" transform="translate(50 66) scale(.85)"/><path d="M45 74 q5 4 10 0" stroke="#2A120A" stroke-width="1.8" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="st-pizza" viewBox="0 0 100 100" overflow="visible"><path d="M14 22 C38 8 62 8 86 22 L50 94Z" fill="#F2C14E" stroke="#8A5A1A" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 20 C38 4 62 4 88 20 L84 28 C62 14 38 14 16 28Z" fill="#D49A4A" stroke="#8A5A1A" stroke-width="2.4" stroke-linejoin="round"/><circle cx="38" cy="36" r="7" fill="#C8102E"/><circle cx="62" cy="40" r="6" fill="#C8102E"/><circle cx="50" cy="60" r="5.5" fill="#C8102E"/><path d="M30 50 q2 4 6 3 M64 56 q-2 4 -6 4" stroke="#5C7A3E" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M58 70 C60 78 56 80 55 74" fill="#F2C14E" stroke="#8A5A1A" stroke-width="1.6"/></symbol>
+<symbol id="st-sorvete" viewBox="0 0 100 100" overflow="visible"><path d="M30 50 L50 96 L70 50Z" fill="#D9A55A" stroke="#8A5A1A" stroke-width="2.2" stroke-linejoin="round"/><path d="M36 58 L60 82 M44 52 L66 70 M64 58 L42 82 M56 52 L34 70" stroke="#8A5A1A" stroke-width="1.5" opacity=".6"/><circle cx="50" cy="36" r="18" fill="#F7E3C8" stroke="#8A6A5A" stroke-width="2"/><circle cx="36" cy="48" r="14" fill="#C8102E" stroke="#6A0716" stroke-width="2"/><circle cx="64" cy="48" r="14" fill="#7A4628" stroke="#4A2412" stroke-width="2"/><circle cx="52" cy="16" r="6" fill="#B5172B"/><path d="M52 10 q4 -8 10 -8" stroke="#5C7A3E" stroke-width="2" fill="none"/><path d="M44 30 l3 1 M54 26 l2 2 M58 36 l3 -1" stroke="#C8102E" stroke-width="2.4" stroke-linecap="round"/></symbol>
+<symbol id="st-pipoca" viewBox="0 0 100 100" overflow="visible"><g fill="#FBF0D8" stroke="#B89A6A" stroke-width="1.6"><circle cx="32" cy="34" r="11"/><circle cx="48" cy="24" r="12"/><circle cx="64" cy="30" r="11"/><circle cx="72" cy="42" r="9"/><circle cx="26" cy="44" r="9"/><circle cx="52" cy="38" r="10"/></g><path d="M22 44 H78 L70 96 H30Z" fill="#FBF4EA" stroke="#6A0716" stroke-width="2.4" stroke-linejoin="round"/><path d="M30 44 L36 96 H44 L42 44Z M54 44 L56 96 H64 L66 44Z" fill="#C8102E"/><rect x="34" y="60" width="32" height="14" rx="3" fill="#B88C3E"/><rect x="34" y="60" width="32" height="14" rx="3" fill="url(#g-ouro)" opacity=".8"/><text x="50" y="71" text-anchor="middle" font-size="10" font-family="Jost,sans-serif" font-weight="700" fill="#4A0812">POP</text></symbol>
+<symbol id="st-fone" viewBox="0 0 100 100" overflow="visible"><path d="M20 62 C16 26 84 26 80 62" stroke="#7E1220" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="12" y="54" width="20" height="30" rx="9" fill="#C8102E" stroke="#6A0716" stroke-width="2.2"/><rect x="68" y="54" width="20" height="30" rx="9" fill="#C8102E" stroke="#6A0716" stroke-width="2.2"/><rect x="16" y="60" width="6" height="18" rx="3" fill="#E9C98A"/><rect x="78" y="60" width="6" height="18" rx="3" fill="#E9C98A"/><path d="M44 50 v20 M58 46 v20 M44 50 l14 -4" stroke="#B88C3E" stroke-width="3" fill="none"/><ellipse cx="40" cy="71" rx="5" ry="4" fill="#B88C3E"/><ellipse cx="54" cy="67" rx="5" ry="4" fill="#B88C3E"/></symbol>
+<symbol id="st-game" viewBox="0 0 100 100" overflow="visible"><path d="M24 34 H76 C88 34 96 50 94 66 C92 80 82 82 76 74 L68 64 H32 L24 74 C18 82 8 80 6 66 C4 50 12 34 24 34Z" fill="#7E1220" stroke="#3A050C" stroke-width="2.4" stroke-linejoin="round"/><path d="M22 46 v16 M14 54 h16" stroke="#E9C98A" stroke-width="5" stroke-linecap="round"/><circle cx="72" cy="48" r="4.5" fill="#E9C98A"/><circle cx="80" cy="56" r="4.5" fill="#C8102E" stroke="#E9C98A" stroke-width="1.5"/><circle cx="64" cy="56" r="4.5" fill="#C8102E" stroke="#E9C98A" stroke-width="1.5"/><circle cx="72" cy="63" r="4.5" fill="#E9C98A"/><path d="M42 44 h6 M52 44 h6" stroke="#E9C98A" stroke-width="3" stroke-linecap="round"/><path d="M45 56 C43 54 45 51 47 53 L50 55 L53 53 C55 51 57 54 55 56 L50 60Z" fill="#E9C98A"/></symbol>
+<symbol id="st-aviao" viewBox="0 0 100 100" overflow="visible"><path d="M8 82 C22 78 26 66 36 66" stroke="#B88C3E" stroke-width="2.4" stroke-dasharray="4 5" fill="none" stroke-linecap="round"/><path d="M8 80 C6 76 9 73 12 75 L14 76 L16 74 C19 72 22 75 19 79 L14 84Z" fill="#C8102E"/><path d="M36 64 L92 14 L62 82 L54 60Z" fill="#FBF4EA" stroke="#6A0716" stroke-width="2.4" stroke-linejoin="round"/><path d="M36 64 L92 14 L54 60Z" fill="#EADAC0" stroke="#6A0716" stroke-width="2" stroke-linejoin="round"/><path d="M54 60 L50 76 L62 82" fill="#C8102E" stroke="#6A0716" stroke-width="2" stroke-linejoin="round"/></symbol>
+<symbol id="st-livro" viewBox="0 0 100 100" overflow="visible"><path d="M50 30 C38 20 20 20 8 26 V82 C20 76 38 76 50 86Z" fill="#FBF4EA" stroke="#6A0716" stroke-width="2.4" stroke-linejoin="round"/><path d="M50 30 C62 20 80 20 92 26 V82 C80 76 62 76 50 86Z" fill="#F3E8D4" stroke="#6A0716" stroke-width="2.4" stroke-linejoin="round"/><path d="M16 38 C26 34 36 34 44 38 M16 48 C26 44 36 44 44 48 M16 58 C26 54 36 54 44 58 M56 38 C64 34 74 34 84 38 M56 48 C64 44 74 44 84 48" stroke="#B89A6A" stroke-width="1.8" fill="none"/><path d="M70 20 V48 L76 42 L82 48 V22" fill="#C8102E" stroke="#6A0716" stroke-width="1.8" stroke-linejoin="round"/><path d="M68 64 C65 61 66 57 69 57 C71 57 72 59 72 60 C72 59 73 57 75 57 C78 57 79 61 76 64 L72 68Z" fill="#C8102E"/></symbol>
+<symbol id="st-bola" viewBox="0 0 100 100" overflow="visible"><circle cx="50" cy="50" r="38" fill="#FFFDF8" stroke="#2A120A" stroke-width="2.6"/><path d="M50 34 L64 44 L59 60 H41 L36 44Z" fill="#2A120A"/><path d="M50 34 V14 M64 44 L82 36 M59 60 L70 76 M41 60 L30 76 M36 44 L18 36" stroke="#2A120A" stroke-width="2.2"/><path d="M40 13 L50 14 L60 13 L58 20 H42Z M85 38 L82 36 L88 52 L82 50Z M12 38 L18 36 L12 52 L18 50Z" fill="#2A120A"/><path d="M28 30 C32 24 38 20 44 19" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/></symbol>
+<symbol id="st-camera" viewBox="0 0 100 100" overflow="visible"><path d="M34 26 L40 18 H60 L66 26Z" fill="#7E1220" stroke="#3A050C" stroke-width="2"/><rect x="10" y="26" width="80" height="56" rx="9" fill="#C8102E" stroke="#6A0716" stroke-width="2.4"/><rect x="10" y="38" width="80" height="30" fill="#7E1220" opacity=".55"/><circle cx="50" cy="54" r="19" fill="#B88C3E" stroke="#6A4A18" stroke-width="2"/><circle cx="50" cy="54" r="19" fill="url(#g-ouro)" opacity=".8"/><circle cx="50" cy="54" r="12" fill="#2A120A"/><circle cx="45" cy="49" r="3.5" fill="#fff" opacity=".8"/><rect x="72" y="31" width="12" height="7" rx="2" fill="#FBF4EA"/><circle cx="20" cy="34" r="3" fill="#E9C98A"/></symbol>
+<symbol id="st-violao" viewBox="0 0 100 100" overflow="visible"><path d="M60 40 L84 10" stroke="#5A3418" stroke-width="7" stroke-linecap="round"/><path d="M80 6 L92 12 L86 20 L76 14Z" fill="#3A1A0C"/><path d="M46 30 C56 26 66 32 64 42 C62 50 56 50 58 58 C62 72 52 92 32 90 C12 88 6 70 16 58 C22 52 28 54 32 46 C36 36 38 32 46 30Z" fill="#D9A55A" stroke="#6A3A18" stroke-width="2.4" stroke-linejoin="round"/><circle cx="40" cy="58" r="7" fill="#3A1A0C"/><path d="M62 38 L34 66" stroke="#F3E2C4" stroke-width="1.2"/><path d="M60 36 L32 64" stroke="#F3E2C4" stroke-width="1.2"/><rect x="22" y="70" width="14" height="5" rx="2" transform="rotate(-45 29 72)" fill="#3A1A0C"/></symbol>
+<symbol id="st-planta" viewBox="0 0 100 100" overflow="visible"><path d="M50 60 C50 44 50 34 50 24" stroke="#4E6B35" stroke-width="3"/><path d="M50 40 C34 40 24 30 24 18 C38 18 48 26 50 40Z" fill="#7C9A55" stroke="#3E5528" stroke-width="2"/><path d="M50 32 C64 32 74 22 76 10 C62 10 52 18 50 32Z" fill="#5C7A3E" stroke="#3E5528" stroke-width="2"/><path d="M50 52 C38 54 28 48 26 40 C36 38 46 42 50 52Z" fill="#5C7A3E" stroke="#3E5528" stroke-width="2"/><path d="M26 58 H74 L68 94 H32Z" fill="#C46A3E" stroke="#6A3018" stroke-width="2.4" stroke-linejoin="round"/><rect x="22" y="56" width="56" height="10" rx="3" fill="#D98250" stroke="#6A3018" stroke-width="2.2"/><use href="#st-olhos" transform="translate(50 78) scale(.8)"/><path d="M46 84 q4 3 8 0" stroke="#2A120A" stroke-width="1.6" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="st-lua" viewBox="0 0 100 100" overflow="visible"><path d="M60 10 C34 12 16 34 18 58 C20 80 40 94 62 92 C76 90 86 82 90 72 C68 80 44 66 42 44 C40 28 48 16 60 10Z" fill="#DDBF7E" stroke="#8A6A2A" stroke-width="2.4"/><path d="M60 10 C34 12 16 34 18 58 C20 80 40 94 62 92 C76 90 86 82 90 72 C68 80 44 66 42 44 C40 28 48 16 60 10Z" fill="url(#g-ouro)" opacity=".7"/><path d="M26 56 q4 4 8 0 M38 66 q4 4 8 0" stroke="#2A120A" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="30" cy="66" rx="4" ry="2.4" fill="#E0505E" opacity=".45"/><path d="M76 22 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5Z M84 48 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6 -4 -4 -1.6 4 -1.6Z" fill="#C8102E"/></symbol>
+<symbol id="st-bolo" viewBox="0 0 100 100" overflow="visible"><path d="M50 8 C46 14 46 18 50 20 C54 18 54 14 50 8Z" fill="#E9A23B"/><rect x="47" y="20" width="6" height="18" rx="2" fill="#FBF4EA" stroke="#C8102E" stroke-width="1.6"/><rect x="16" y="38" width="68" height="22" rx="6" fill="#F7E3C8" stroke="#8A5A3A" stroke-width="2.2"/><path d="M16 46 C22 54 28 54 32 46 C36 54 42 54 46 46 C50 54 56 54 60 46 C64 54 70 54 74 46 C78 54 82 52 84 46" fill="#C8102E" stroke="#6A0716" stroke-width="1.6"/><rect x="10" y="60" width="80" height="30" rx="7" fill="#B5172B" stroke="#6A0716" stroke-width="2.2"/><path d="M10 72 H90" stroke="#F7E3C8" stroke-width="4"/><circle cx="24" cy="82" r="2.6" fill="#E9C98A"/><circle cx="50" cy="82" r="2.6" fill="#E9C98A"/><circle cx="76" cy="82" r="2.6" fill="#E9C98A"/></symbol>
+<symbol id="st-cerveja" viewBox="0 0 100 100" overflow="visible"><path d="M22 30 H66 L62 90 C62 93 59 95 56 95 H32 C29 95 26 93 26 90Z" fill="#E9A23B" stroke="#7A4A12" stroke-width="2.4" stroke-linejoin="round"/><path d="M66 42 C84 42 84 72 64 72" stroke="#7A4A12" stroke-width="6" fill="none"/><path d="M18 30 C16 20 26 16 32 20 C36 12 48 12 52 20 C58 14 70 18 68 30 C68 36 18 36 18 30Z" fill="#FFFDF8" stroke="#B89A6A" stroke-width="2"/><path d="M36 46 v38 M50 46 v38" stroke="#fff" stroke-opacity=".35" stroke-width="4" stroke-linecap="round"/><circle cx="42" cy="58" r="2" fill="#fff" opacity=".7"/><circle cx="54" cy="72" r="1.6" fill="#fff" opacity=".7"/></symbol>
+  </defs>
+</svg>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<p class="strip"><span>Monte grátis e só pague depois de ver pronta</span><span class="dot" aria-hidden="true"></span><span>Chega por link ou QR code, sem baixar nada</span></p>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="logo lockup on-vinho" href="#inicio" aria-label="Escreva com Amor, início"><svg viewBox="0 0 124 100" aria-hidden="true"><use href="#logo-p"/></svg><span class="wm" data-noi18n><span class="w1">Escreva</span><span class="w2">com</span><span class="w3">Amor</span></span></a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#modelos">Modelos</a><a href="#formatos">Álbum e retrospectiva</a><a href="#como">Como funciona</a><a href="#duvidas">Dúvidas</a>
+    </nav>
+    <div class="lang" id="lang" data-noi18n>
+      <button class="lang-b" type="button" id="lang-b" aria-haspopup="true" aria-expanded="false" aria-controls="lang-m"><svg class="lang-g" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9M12 3C9.4 5.6 8.2 8.6 8.2 12s1.2 6.4 3.8 9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span id="lang-c">PT</span><svg class="lang-k" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="lang-m" id="lang-m" role="menu" hidden>
+        <button type="button" role="menuitemradio" aria-checked="true" data-lang="pt" lang="pt-BR"><b>PT</b><span>Português</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" role="menuitemradio" aria-checked="false" data-lang="en" lang="en"><b>EN</b><span>English</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" role="menuitemradio" aria-checked="false" data-lang="es" lang="es"><b>ES</b><span>Español</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+    <a class="tab-precos" href="#precos" data-view-link="precos">Preços</a>
+    <a class="btn btn-gold ouro-bg spring" href="#criar" data-go="criar">Criar agora</a>
+  </div>
+</header>
+
+<main id="conteudo">
+<!-- ======================= INÍCIO ======================= -->
+<div class="view" id="v-inicio" data-view="inicio">
+
+  <section class="hero bg-vinho" id="inicio">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="pill">carta digital com envelope, lacre e flores</p>
+        <h1 class="h1 words" id="h1">Tem coisa que só cabe numa <em>carta.</em></h1>
+        <p class="rot-line">Uma carta para <span class="rot" id="rot" aria-live="off"><span class="rot-in"><span>o seu amor</span><span>a sua mãe</span><span>a melhor amiga</span><span>quem faz aniversário</span><span>aquele crush</span><span>a sua avó</span><span>o seu amor</span></span></span></p>
+        <p class="hero-sub">Escreva do seu jeito e escolha envelope, lacre, flores, fotos e música. Quem recebe rompe o lacre no celular e abre a carta como se ela tivesse chegado pelo correio.</p>
+        <form class="start" id="start" autocomplete="off">
+          <label for="start-to">Para quem é a sua carta?</label>
+          <div class="start-row"><input id="start-to" name="to" placeholder="Nome de quem vai receber" maxlength="40"><button class="btn btn-primary spring" type="submit">Começar minha carta</button></div>
+          <div class="occ-pick" role="group" aria-label="Ocasião da carta de exemplo"><span>É para</span><div class="chips sm" id="hero-occ"></div></div>
+        </form>
+        <ul class="trust"><li>Montar é grátis</li><li>Você vê pronta antes de pagar</li><li>Abre em qualquer celular</li></ul>
+      </div>
+      <div class="hero-phone">
+        <svg class="hero-bq" id="hero-bq" viewBox="70 50 460 545" aria-hidden="true"></svg>
+        <div class="phone" id="hero-ph"><div class="screen"><span class="island"></span><div class="pv" id="pv-hero"></div></div></div>
+        <p class="tap-hint" id="tap-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#heart"/></svg>toque no lacre para abrir</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="faixas" aria-hidden="true">
+    <div class="fx-b fx-2"><div class="fx-t"><span class="fx-w fw-d">Retrospectiva</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Álbum do casal</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Aniversário</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-a">Homenagem</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-e">Amigos</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-d">Chamar para sair</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Declaração</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Pedido de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-a">Aniversário de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-d">Retrospectiva</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Álbum do casal</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Aniversário</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-a">Homenagem</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-e">Amigos</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-d">Chamar para sair</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Declaração</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Pedido de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-a">Aniversário de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg></div></div>
+    <div class="fx-b fx-1"><div class="fx-t"><span class="fx-w fw-a">Aniversário de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Pedido de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Declaração</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-d">Chamar para sair</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-e">Amigos</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-a">Homenagem</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Aniversário</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Álbum do casal</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-d">Retrospectiva</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-a">Aniversário de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Pedido de namoro</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Declaração</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-d">Chamar para sair</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-e">Amigos</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-a">Homenagem</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-b">Aniversário</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-c">Álbum do casal</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg><span class="fx-w fw-d">Retrospectiva</span><svg class="fx-h" viewBox="0 0 24 24"><use href="#heart"/></svg></div></div>
+  </div>
+  <section class="manifesto bg-branco" aria-label="Por que uma carta">
+    <div class="petals mf-pet" id="mf-pet" hidden></div>
+    <div class="wrap">
+      <svg class="mf-sprig" id="mf-sprig" aria-hidden="true"></svg>
+      <p class="mf-text">Tem coisa que a gente sente há muito tempo e nunca acha o momento certo de dizer. Uma <em>carta</em> cria esse momento. Ela chega fechada, com o nome da pessoa no envelope, e só abre quando ela rompe o <em>lacre</em>. Depois vem o resto: as palavras, as <em>fotos</em>, as <em>flores</em> e a <em>música</em> de vocês.</p>
+    </div>
+    <svg class="mf-garden" id="mf-garden" aria-hidden="true"></svg>
+  </section>
+
+  <section class="formatos bg-branco" id="formatos">
+    <div class="wrap">
+      <p class="eyebrow">três presentes</p>
+      <h2>Três jeitos de dizer o que você <em>sente</em></h2>
+      <p class="lead">Uma carta para abrir, um álbum para folhear ou uma retrospectiva para assistir. Escolha o formato e monte do seu jeito.</p>
+      <div class="fmt-grid" id="fmt-grid">
+        <article class="fc glow" data-fmt="carta">
+          <div class="fc-vis v-carta"><div class="fc-env" id="fc-env"></div></div>
+          <div class="fc-b"><p class="fc-k">carta com lacre</p><h3>Carta</h3><p>Chega num envelope fechado. A pessoa rompe o lacre e a carta se abre com flores, fotos, stickers, contador do tempo juntos e a música de vocês.</p>
+          <div class="fc-act"><button class="btn btn-line sm" type="button" data-ex="carta">Ver exemplo</button><a class="btn btn-primary sm spring" href="#criar" data-go="criar" data-fmt-go="carta">Escrever carta</a></div></div>
+        </article>
+        <article class="fc glow" data-fmt="album">
+          <div class="fc-vis v-album"><div class="mini-book" style="--c1:#6A0E1A;--c2:#3A0710"><span class="stitch"></span><small>álbum de</small><b class="ouro-texto">Nós dois</b><i>Miguel &amp; Ana Clara</i></div><div class="mini-page papel papel-liso"><span class="gx-img" style="background:var(--ph2) center/cover"></span></div></div>
+          <div class="fc-b"><p class="fc-k">álbum do casal</p><h3>Álbum</h3><p>Um livro de capa de couro para folhear no celular, página por página, com as fotos de vocês, legendas, datas e o que você ama na pessoa.</p>
+          <div class="fc-act"><button class="btn btn-line sm" type="button" data-ex="album">Folhear exemplo</button><a class="btn btn-primary sm spring" href="#criar" data-go="criar" data-fmt-go="album">Montar álbum</a></div></div>
+        </article>
+        <article class="fc glow" data-fmt="retro">
+          <div class="fc-vis v-retro"><div class="mini-story"><span class="ms-bars"><i class="on"></i><i class="on"></i><i class="half"></i><i></i><i></i></span><span class="gx-img" style="background:var(--ph1) center/cover"></span><span class="ms-txt"><small>juntos há</small><b class="odo" id="odo-ms" data-from="2024-08-17">000</b><em>dias</em></span></div></div>
+          <div class="fc-b"><p class="fc-k">retrospectiva do casal</p><h3>Retrospectiva</h3><p>A história de vocês em stories animados, com música tocando, os números do casal, as fotos que contam tudo e um final para guardar.</p>
+          <div class="fc-act"><button class="btn btn-line sm" type="button" data-ex="retro">Assistir exemplo</button><a class="btn btn-primary sm spring" href="#criar" data-go="criar" data-fmt-go="retro">Criar retrospectiva</a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="modelos bg-vinho" id="modelos">
+    <div class="wrap">
+      <p class="eyebrow">exemplos de cartas</p>
+      <h2>Comece por um <em>modelo</em></h2>
+      <p class="lead">Cada modelo já vem com texto, cores, flores e stickers. Abra, veja como a pessoa recebe e troque tudo o que quiser.</p>
+      <div class="filters chips" id="m-filter" role="group" aria-label="Filtrar modelos"><button class="chip" type="button" data-f="todos" aria-pressed="true">Todos</button><button class="chip" type="button" data-f="amor" aria-pressed="false">Para o amor</button><button class="chip" type="button" data-f="familia" aria-pressed="false">Amigos e família</button></div>
+    </div>
+    <div class="m-wrap"><button class="m-arr prev" type="button" data-dir="-1" aria-label="Ver modelos anteriores" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="m-track" id="m-track"><div class="m-row" id="m-row"></div></div><button class="m-arr next" type="button" data-dir="1" aria-label="Ver mais modelos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+    <p class="wrap drag-tip" aria-hidden="true">arraste ou use as setas</p>
+  </section>
+
+  <section class="recursos bg-branco" id="recursos">
+    <div class="wrap">
+      <p class="eyebrow">personalize tudo</p>
+      <h2>Tudo que cabe na sua <em>carta</em></h2>
+      <div class="feat-grid">
+        <div class="ft"><div class="ft-vis" id="ft-seals"></div><h3>Lacre do seu jeito</h3><p>Cinco cores de cera, com as iniciais de vocês, coração, rosa ou estrela.</p></div>
+        <div class="ft"><div class="ft-vis envs" id="ft-envs"></div><h3>Envelopes e papéis</h3><p>Cinco envelopes e sete papéis: pautado, algodão, kraft, envelhecido, caderno, aquarela e quadriculado.</p></div>
+        <div class="ft"><div class="ft-vis"><svg class="ft-bq" id="ft-bq" viewBox="70 50 460 545" aria-hidden="true"></svg></div><h3>Flores que brotam</h3><p>Rosas, girassóis, tulipas, lírios ou flores do campo, desabrochando enquanto a pessoa lê.</p></div>
+        <div class="ft"><div class="ft-vis pols"><span class="gx-pol"><span class="gx-img" style="background:var(--ph0) center 30%/cover"></span></span><span class="gx-pol"><span class="gx-img" style="background:var(--ph4) center/cover"></span></span><span class="gx-pol"><span class="gx-img" style="background:var(--ph6) center/cover"></span></span></div><h3>Fotos de vocês</h3><p>Em carrossel de polaroids, presas na fita, num varal ou numa galeria.</p></div>
+        <div class="ft"><div class="ft-vis cnt"><small>juntos há</small><b class="odo" id="odo-ft" data-from="2024-08-17">000</b><span>dias</span></div><h3>Contador do tempo juntos</h3><p>Anos, meses, dias e até os segundos, contando ao vivo desde a data de vocês.</p></div>
+        <div class="ft"><div class="ft-vis mus"><span class="ft-play ouro-bg"><svg viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><span class="ft-song"><b>Nossa música</b><i><u></u></i></span><span class="eq"><i></i><i></i><i></i><i></i></span></div><h3>A música de vocês</h3><p>Um player na carta para a trilha sonora do casal, da amizade ou da família.</p></div>
+        <div class="ft"><div class="ft-vis stks" id="ft-stks"></div><h3>Stickers</h3><p>Gatinho, café, pizza, viagem, violão e mais, colados pela carta.</p></div>
+        <div class="ft"><div class="ft-vis fxs"><span class="fx fx-beat">Te amo</span><span class="fx fx-write">sempre</span><span class="fx fx-wave">sorriso</span></div><h3>Letras que falam</h3><p>Estilo clássico, elegante, ou divertido, com várias fontes misturadas e animadas.</p></div>
+        <div class="ft"><div class="ft-vis ask" id="ft-ask"><p>Quer namorar comigo?</p><span><button type="button" class="ft-yes">SIM!</button><button type="button" class="ft-no" id="ft-no">não</button></span></div><h3>Perguntas na carta</h3><p>No pedido, o botão de não foge. No convite, a pessoa escolhe para onde vocês vão.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="como bg-vinho" id="como">
+    <div class="wrap">
+      <p class="eyebrow">como funciona</p>
+      <h2>Você só paga no <em>último passo</em></h2>
+      <ol class="tl" id="tl">
+        <li class="tl-i"><span class="tl-dot"><b>1</b></span><div><h3>Escolha o formato e o modelo</h3><p>Carta, álbum ou retrospectiva, para o amor, a família ou os amigos.</p></div></li>
+        <li class="tl-i"><span class="tl-dot"><b>2</b></span><div><h3>Escreva e personalize</h3><p>Texto, fotos, envelope, lacre, flores e música, vendo tudo ao vivo num celular ao lado.</p></div></li>
+        <li class="tl-i"><span class="tl-dot"><b>3</b></span><div><h3>Veja pronta</h3><p>Abra do jeito que a pessoa vai receber e ajuste o que quiser antes de enviar.</p></div></li>
+        <li class="tl-i"><span class="tl-dot"><b>4</b></span><div><h3>Pague e envie</h3><p>Você recebe um link e um QR code para mandar como e quando quiser.</p></div></li>
+      </ol>
+      <span class="tl-line" id="tl-line" aria-hidden="true"><i></i></span>
+      <p class="center-cta"><a class="btn btn-gold ouro-bg spring" href="#criar" data-go="criar">Começar agora, é grátis montar</a></p>
+    </div>
+  </section>
+
+  <section class="entrega bg-branco" id="entrega">
+    <div class="wrap ent-in">
+      <div class="ent-copy">
+        <p class="eyebrow">entrega</p>
+        <h2>Chega como mensagem, abre como <em>carta</em></h2>
+        <p class="lead">Depois de pronta, você recebe um link para mandar por mensagem, rede social ou e-mail, e um QR code para imprimir e entregar junto com um presente. A pessoa abre no navegador do celular, sem baixar nada.</p>
+      </div>
+      <div class="ent-vis">
+        <div class="chat"><p class="bub me">tenho uma coisa pra você 💌</p><p class="bub me link"><span class="lk-env" id="lk-env"></span><span><b>Uma carta para você</b><small>escrevacomamor.com.br</small></span></p><p class="bub her">o que é isso?? 😳</p><p class="bub her">AMOR 😭😭</p></div>
+        <div class="qr-card papel papel-liso"><div class="qr-box" id="qr-demo"></div><p>aponte a câmera<br><b>para abrir a sua carta</b></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="duvidas bg-branco" id="duvidas">
+    <div class="wrap faq-in">
+      <div><p class="eyebrow">dúvidas</p><h2>Perguntas <em>frequentes</em></h2></div>
+      <div class="faq">
+        <details><summary>Preciso pagar para montar?</summary><p>Não. Você monta, vê a carta pronta do jeito que a pessoa vai receber e só paga quando gostar do resultado.</p></details>
+        <details><summary>A pessoa precisa baixar algum aplicativo?</summary><p>Não. A carta abre no navegador de qualquer celular ou computador, pelo link ou pelo QR code.</p></details>
+        <details><summary>Como a pessoa recebe?</summary><p>Você recebe um link para mandar por mensagem, rede social ou e-mail, e um QR code para imprimir ou mostrar na hora.</p></details>
+        <details><summary>Qual a diferença entre carta, álbum e retrospectiva?</summary><p>A carta chega num envelope com lacre e se abre com texto, flores e fotos. O álbum é um livro para folhear página por página. A retrospectiva conta a história de vocês em stories animados com música.</p></details>
+        <details><summary>É só para casais?</summary><p>Não. Tem modelos para amigos, aniversário, homenagem para mãe, pai e avós, convite para sair e pedido de namoro.</p></details>
+        <details><summary>Posso colocar as minhas fotos?</summary><p>Sim. Você escolhe as fotos do seu celular, escreve uma legenda em cada uma e escolhe como elas aparecem.</p></details>
+        <details><summary>Como funcionam os pacotes?</summary><p>Cada carta, álbum ou retrospectiva usa 1 do pacote. Os valores ficam na aba <a href="#precos" data-view-link="precos">Preços</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final bg-vinho">
+    <svg class="final-bq" id="final-bq" viewBox="70 50 460 545" aria-hidden="true"></svg>
+    <div class="wrap final-in">
+      <h2>O que você sente merece ficar <em>por escrito</em></h2>
+      <p class="lead">Comece agora e veja a sua carta pronta antes de decidir qualquer coisa.</p>
+      <a class="btn btn-gold ouro-bg spring big" href="#criar" data-go="criar">Escrever minha carta</a>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= CRIAR ======================= -->
+<div class="view" id="v-criar" data-view="criar" hidden>
+  <div class="cr-top bg-vinho">
+    <div class="wrap">
+      <ol class="steps" aria-label="Etapas"><li class="on"><b>1</b>Montar</li><li><b>2</b>Ver pronta</li><li><b>3</b>Enviar</li></ol>
+      <h2 class="cr-h">Monte o seu <em>presente</em></h2>
+      <div class="fmt-tabs" role="tablist" aria-label="Formato" id="fmt-tabs">
+        <button role="tab" type="button" data-fmt="carta" aria-selected="true"><span class="ti">✉</span>Carta</button>
+        <button role="tab" type="button" data-fmt="album" aria-selected="false"><span class="ti">❦</span>Álbum</button>
+        <button role="tab" type="button" data-fmt="retro" aria-selected="false"><span class="ti">▶</span>Retrospectiva</button>
+      </div>
+    </div>
+  </div>
+  <div class="cr-mode" role="group" aria-label="Modo"><button type="button" data-mode="edit" aria-pressed="true">Editar</button><button type="button" data-mode="prev" aria-pressed="false">Prévia ao vivo</button></div>
+  <div class="wrap cr-grid" id="cr-grid">
+    <div class="cr-forms">
+      <!-- carta -->
+      <form class="cr-form" id="f-carta" data-fmt="carta" autocomplete="off">
+        <fieldset class="grp"><legend><b>1</b>Ocasião</legend><div class="chips" id="c-occ" data-k="occ"></div><p class="hint-s">Trocar a ocasião muda as cores e o texto de exemplo. O que você já escreveu fica.</p></fieldset>
+        <fieldset class="grp"><legend><b>2</b>O que você quer dizer</legend>
+          <div class="two"><label class="fld">Para<input data-t="to" data-v="env"></label><label class="fld">De<input data-t="from" data-v="env"></label></div>
+          <label class="fld">Como começa<input data-t="hello" data-v="open"></label>
+          <label class="fld">Palavra em destaque<input data-t="title" data-v="open" maxlength="28"></label>
+          <label class="fld">Sua mensagem<textarea data-t="body" data-v="open" rows="7"></textarea><small>Pule uma linha para começar outro parágrafo.</small></label>
+          <label class="fld">Assinatura<input data-t="sign" data-v="open"></label>
+        </fieldset>
+        <fieldset class="grp"><legend><b>3</b>Envelope e lacre</legend>
+          <span class="sub">Envelope</span><div class="sw" data-k="env" data-v="env"></div>
+          <span class="sub">Cera do lacre</span><div class="sw" data-k="wax" data-v="env"></div>
+          <span class="sub">No lacre</span><div class="chips sm" data-k="sym" data-v="env"></div>
+          <label class="fld" id="ini-fld">Iniciais<input data-c="ini" data-v="env" maxlength="9"></label>
+          <span class="sub">Tom da mão que abre a carta</span><div class="sw" data-k="pele" data-v="env"></div>
+        </fieldset>
+        <fieldset class="grp"><legend><b>4</b>Estilo, papel e flores</legend>
+          <span class="sub">Estilo</span><div class="chips sm" data-k="style" data-v="open"></div>
+          <span class="sub">Papel</span><div class="chips sm" data-k="paper" data-v="open"></div>
+          <span class="sub">Flores</span><div class="chips sm" data-k="flor" data-v="open"></div>
+        </fieldset>
+        <fieldset class="grp"><legend><b>5</b>Fotos</legend><div class="photos" data-v="open"></div>
+          <span class="sub">Como as fotos aparecem</span><div class="chips sm" data-k="gal" data-v="open"></div></fieldset>
+        <fieldset class="grp"><legend><b>6</b>Data e música</legend>
+          <div class="two"><label class="fld">Desde quando<input type="date" data-t="since" data-v="open"></label><label class="fld">Nome da música<input data-t="song" data-v="open"></label></div>
+        </fieldset>
+        <fieldset class="grp"><legend><b>7</b>Stickers</legend><div class="stk-pick" id="c-stk" data-v="open"></div><p class="hint-s">Escolha até 6.</p></fieldset>
+      </form>
+      <!-- álbum -->
+      <form class="cr-form" id="f-album" data-fmt="album" autocomplete="off" hidden>
+        <fieldset class="grp"><legend><b>1</b>Capa</legend>
+          <span class="sub">Cor do couro</span><div class="sw" data-k="cover" data-pg="0"></div>
+          <label class="fld">Título<input data-a="title" data-pg="0" maxlength="24"></label>
+          <label class="fld">Nomes<input data-a="names" data-pg="0" maxlength="40"></label>
+        </fieldset>
+        <fieldset class="grp"><legend><b>2</b>Desde quando</legend><label class="fld">Data em que tudo começou<input type="date" data-a="since" data-pg="5"></label></fieldset>
+        <fieldset class="grp"><legend><b>3</b>Fotos e legendas</legend><div class="photos" data-pg="4"></div></fieldset>
+        <fieldset class="grp"><legend><b>4</b>Coisas que eu amo em você</legend><div class="list" data-a="loves" data-pg="6"></div></fieldset>
+        <fieldset class="grp"><legend><b>5</b>Música e final</legend>
+          <label class="fld">Nome da música<input data-a="song" data-pg="7"></label>
+          <label class="fld">Mensagem final<textarea data-a="final" data-pg="10" rows="4"></textarea></label>
+          <label class="fld">Assinatura<input data-a="sign" data-pg="10"></label>
+        </fieldset>
+      </form>
+      <!-- retrospectiva -->
+      <form class="cr-form" id="f-retro" data-fmt="retro" autocomplete="off" hidden>
+        <fieldset class="grp"><legend><b>1</b>Abertura</legend>
+          <label class="fld">Título<input data-r="title" data-sl="-1" maxlength="28"></label>
+          <label class="fld">Nomes<input data-r="names" data-sl="-1" maxlength="40"></label>
+          <div class="two"><label class="fld">Desde quando<input type="date" data-r="since" data-sl="1"></label><label class="fld">Nome da música<input data-r="song" data-sl="7"></label></div>
+        </fieldset>
+        <fieldset class="grp"><legend><b>2</b>Vocês em números</legend><div class="stats" data-r="stats" data-sl="4"></div></fieldset>
+        <fieldset class="grp"><legend><b>3</b>Fotos e legendas</legend><div class="photos" data-sl="5"></div></fieldset>
+        <fieldset class="grp"><legend><b>4</b>O que eu mais amo em você</legend><div class="list" data-r="loves" data-sl="6"></div></fieldset>
+        <fieldset class="grp"><legend><b>5</b>Final</legend><label class="fld">Frase final<input data-r="final" data-sl="8" maxlength="60"></label></fieldset>
+      </form>
+    </div>
+    <aside class="cr-phone" aria-label="Prévia ao vivo">
+      <p class="live">ao vivo</p>
+      <div class="phone" id="cr-ph"><div class="screen"><span class="island"></span><div class="pv" id="pv-carta"></div><div class="pv" id="pv-album" hidden></div><div class="pv" id="pv-retro" hidden></div></div></div>
+      <p class="ph-tip" id="ph-tip">toque no lacre para ver a abertura</p>
+    </aside>
+  </div>
+  <div class="cr-bar"><div class="wrap cr-bar-in"><p id="cr-sum">Carta para <b>Ana Clara</b></p><button class="btn btn-primary spring" type="button" id="see">Ver como ficou</button></div></div>
+</div>
+
+<!-- ======================= PREÇOS ======================= -->
+<div class="view" id="v-precos" data-view="precos" hidden>
+  <section class="pr bg-branco">
+    <div class="wrap">
+      <ol class="steps light" aria-label="Etapas"><li class="done"><b>1</b>Montar</li><li class="done"><b>2</b>Ver pronta</li><li class="on"><b>3</b>Enviar</li></ol>
+      <div class="pr-sum" id="pr-sum"></div>
+      <div id="pr-pick">
+        <p class="eyebrow">preços</p>
+        <h2>Escolha o seu <em>pacote</em></h2>
+        <p class="lead">Cada carta, álbum ou retrospectiva usa 1 do pacote.</p>
+        <div class="packs" role="radiogroup" aria-label="Pacotes" id="packs">
+          <button class="pack glow" type="button" role="radio" aria-checked="false" data-n="1" data-v="9,90"><span class="pk-n">1</span><span class="pk-l">presente</span><span class="pk-p"><small>R$</small>9,90</span><span class="pk-u">para uma ocasião especial</span></button>
+          <button class="pack glow rec" type="button" role="radio" aria-checked="true" data-n="3" data-v="24,90"><span class="pk-tag ouro-bg">Recomendado</span><span class="pk-n">3</span><span class="pk-l">presentes</span><span class="pk-p"><small>R$</small>24,90</span><span class="pk-u">R$ 8,30 cada, economize R$ 4,80</span></button>
+          <button class="pack glow" type="button" role="radio" aria-checked="false" data-n="5" data-v="39,90"><span class="pk-n">5</span><span class="pk-l">presentes</span><span class="pk-p"><small>R$</small>39,90</span><span class="pk-u">R$ 7,98 cada, economize R$ 9,60</span></button>
+        </div>
+        <ul class="incl"><li>Carta, álbum ou retrospectiva, você escolhe</li><li>Todos os modelos, papéis, flores e stickers</li><li>Suas fotos e a música de vocês</li><li>Link e QR code para enviar</li></ul>
+        <p class="center-cta"><button class="btn btn-primary spring big" type="button" id="pay">Continuar com 3 presentes</button></p>
+      </div>
+      <div class="checkout" id="checkout" hidden>
+        <div class="co-card papel papel-liso">
+          <p class="eyebrow">pagamento</p>
+          <h3 id="co-t">3 presentes por R$ 24,90</h3>
+          <p class="demo-note">Esta é uma prévia do site: o pagamento ainda não está ligado. Toque abaixo para ver o que acontece depois que o pagamento é aprovado.</p>
+          <button class="btn btn-primary spring" type="button" id="pay-ok">Simular pagamento aprovado</button>
+          <button class="btn btn-ghost" type="button" id="pay-back">Trocar de pacote</button>
+        </div>
+      </div>
+      <div class="done" id="done" hidden>
+        <canvas class="confete" id="confete" aria-hidden="true"></canvas>
+        <p class="eyebrow">pronto</p>
+        <h2 id="done-t">Agora é só <em>enviar</em></h2>
+        <div class="done-grid">
+          <div class="share">
+            <label for="lk">Link da sua carta</label>
+            <div class="lk-row"><input id="lk" readonly><button class="btn btn-primary sm" type="button" id="copy">Copiar</button></div>
+            <p class="copied" id="copied" aria-live="polite"></p>
+            <a class="btn btn-wpp" id="wpp" href="#" target="_blank" rel="noopener">Enviar no WhatsApp</a>
+            <button class="btn btn-line" type="button" id="see2">Abrir como quem recebe</button>
+            <p class="left" id="left"></p>
+          </div>
+          <div class="qr-card papel papel-liso big"><div class="qr-box" id="qr"></div><p>imprima e entregue junto<br><b>com um presente</b></p></div>
+        </div>
+        <p class="center-cta"><a class="btn btn-gold ouro-bg" href="#criar" data-go="criar" id="next-one">Montar o próximo presente</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="foot bg-vinho">
+  <div class="wrap foot-in">
+    <span class="lockup on-vinho"><svg viewBox="0 0 124 100" aria-hidden="true"><use href="#logo-p"/></svg><span class="wm" data-noi18n><span class="w1">Escreva</span><span class="w2">com</span><span class="w3">Amor</span></span></span>
+    <nav aria-label="Rodapé"><a href="#modelos">Modelos</a><a href="#formatos">Álbum e retrospectiva</a><a href="#precos" data-view-link="precos">Preços</a><a href="#duvidas">Dúvidas</a></nav>
+    <small>© 2026 Escreva com Amor · escrevacomamor.com.br</small>
+  </div>
+</footer>
+
+<div class="scta" id="scta"><a class="btn btn-gold ouro-bg spring" href="#criar" data-go="criar">Escrever minha carta</a><small>montar é grátis</small></div>
+
+<div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-labelledby="ov-t">
+  <div class="ov-head">
+    <button class="ov-back" type="button" id="ov-x"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i="ov.back">Voltar</span></button>
+    <p id="ov-t">Assim a pessoa vai receber</p>
+    <button class="btn btn-gold ouro-bg sm spring" type="button" id="ov-go">Gostei, quero enviar</button>
+  </div>
+  <div class="ov-stage" id="ov-stage"></div>
+</div>
