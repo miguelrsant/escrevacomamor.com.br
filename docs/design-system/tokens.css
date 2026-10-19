@@ -1,0 +1,38 @@
+/*
+ * Tokens do design system do Escreva com Amor.
+ * Cópia de referência do :root de src/legacy/home.css (a fonte da verdade é o CSS do app).
+ * Se mudar um token lá, atualize aqui e em docs/design-system/cores.md.
+ */
+:root{
+
+  --branco:#FAF6EF; --vinho-900:#3A0710; --vinho-700:#5E0B18;
+  --vermelho-600:#8E1422; --vermelho-500:#B11E2F; --vermelho-400:#D2334A; --lacre:#6E0D19;
+  --ouro-700:#7E5A22; --ouro-500:#B88C3E; --ouro-300:#DDBF7E;
+  --papel-100:#F6EEDF; --papel-200:#E6D8BE; --tinta:#4A0E16; --tinta-suave:#7A4A4F;
+  --folha:#4E6B35; --folha-claro:#7C9A55;
+  --f-display:"Bodoni Moda","Didot","Times New Roman",serif;
+  --f-assinatura:"Pinyon Script","Snell Roundhand",cursive;
+  --f-ui:"Jost","Futura","Helvetica Neue",Arial,sans-serif;
+  --f-mao:"Caveat","Bradley Hand",cursive;
+  --f-pincel:"Caveat Brush","Caveat",cursive;
+  --f-gordinha:"Shrikhand","Abril Fatface",Georgia,serif;
+  --f-bolha:"Bagel Fat One","Arial Black",sans-serif;
+  --f-sussurro:"Cormorant Garamond",Georgia,serif;
+  --f-pena:"Mrs Saint Delafield","Pinyon Script",cursive;
+  --f-cartaz:"Abril Fatface","Bodoni Moda",serif;
+  --f-onda:"Pacifico",cursive;
+  --f-fofa:"Fredoka","Arial Rounded MT Bold",sans-serif;
+  --f-vibes:"Great Vibes",cursive;
+  --f-gloock:"Gloock",Georgia,serif;
+  --f-amiga:"Love Ya Like A Sister",cursive;
+  --f-neon:"Monoton",sans-serif;
+  --f-danca:"Dancing Script",cursive;
+  --f-playfair:"Playfair Display",Georgia,serif;
+  --f-maquina:"Special Elite","Courier New",monospace;
+  --grao:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --grao-leve:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .13 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --fibras:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.02 .6' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 0 0 0 -.35 .17'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --ouro-tex:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' seed='4'/%3E%3CfeColorMatrix values='.5 0 0 0 .48 .38 0 0 0 .34 .16 0 0 0 .12 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  --forro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'%3E%3Cpath d='M12 17s-4.4-2.7-5.9-5.4C5.1 9.6 6.2 7 8.6 7c1.3 0 2.2.8 3.4 2 1.2-1.2 2.1-2 3.4-2 2.4 0 3.5 2.6 2.5 4.6C16.4 14.3 12 17 12 17z' fill='%23B88C3E' fill-opacity='.3'/%3E%3C/svg%3E");
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
